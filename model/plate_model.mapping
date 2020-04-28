@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<mapping>
+	<map>
+		<framework name="dense_1/BiasAdd" out_port_id="0"/>
+		<IR id="18" name="dense_1/MatMul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv2d_2/BiasAdd" out_port_id="0"/>
+		<IR id="7" name="ScaleShift/conv2d_2/BiasAdd/Add" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="activation_2/Relu" out_port_id="0"/>
+		<IR id="22" name="activation_2/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="dense_2/BiasAdd" out_port_id="0"/>
+		<IR id="21" name="dense_2/MatMul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv2d_3/BiasAdd" out_port_id="0"/>
+		<IR id="10" name="ScaleShift/conv2d_3/BiasAdd/Add" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="dense_4/Sigmoid" out_port_id="0"/>
+		<IR id="27" name="dense_4/Sigmoid" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="activation_1/Relu" out_port_id="0"/>
+		<IR id="19" name="activation_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv2d_3/Conv2D" out_port_id="0"/>
+		<IR id="9" name="conv2d_3/Conv2D" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv2d_2/Conv2D" out_port_id="0"/>
+		<IR id="6" name="conv2d_2/Conv2D" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="max_pooling2d_3/MaxPool" out_port_id="0"/>
+		<IR id="11" name="max_pooling2d_3/MaxPool" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="dense_4/BiasAdd" out_port_id="0"/>
+		<IR id="26" name="dense_4/MatMul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="dense_3/BiasAdd" out_port_id="0"/>
+		<IR id="24" name="dense_3/MatMul" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="batch_normalization_2/batchnorm/add_1" out_port_id="0"/>
+		<IR id="23" name="batch_normalization_2/batchnorm/mul_1/FusedScaleShift_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="flatten_1/Reshape" out_port_id="0"/>
+		<IR id="17" name="flatten_1/Reshape" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv2d_4/Conv2D" out_port_id="0"/>
+		<IR id="12" name="conv2d_4/Conv2D" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv2d_1_input" out_port_id="0"/>
+		<IR id="1" name="Mul_" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="max_pooling2d_4/MaxPool" out_port_id="0"/>
+		<IR id="15" name="max_pooling2d_4/MaxPool/Transpose" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="dense_3/Relu" out_port_id="0"/>
+		<IR id="25" name="dense_3/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv2d_1/Relu" out_port_id="0"/>
+		<IR id="4" name="conv2d_1/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="batch_normalization_1/batchnorm/add_1" out_port_id="0"/>
+		<IR id="20" name="batch_normalization_1/batchnorm/mul_1/FusedScaleShift_" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="conv2d_1/Conv2D" out_port_id="0"/>
+		<IR id="2" name="conv2d_1/Conv2D" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="conv2d_4/BiasAdd" out_port_id="0"/>
+		<IR id="13" name="ScaleShift/conv2d_4/BiasAdd/Add" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="flatten_1/Const" out_port_id="0"/>
+		<IR id="16" name="flatten_1/Reshape/Cast_11841_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="max_pooling2d_1/MaxPool" out_port_id="0"/>
+		<IR id="5" name="max_pooling2d_1/MaxPool" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="conv2d_1/BiasAdd" out_port_id="0"/>
+		<IR id="3" name="ScaleShift/conv2d_1/BiasAdd/Add" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="max_pooling2d_2/MaxPool" out_port_id="0"/>
+		<IR id="8" name="max_pooling2d_2/MaxPool" out_port_id="1"/>
+	</map>
+</mapping>
